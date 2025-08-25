@@ -10,12 +10,12 @@ function HomePage() {
         <AppHeader />
       </div>
       <div className="product-list">
-        {products.map((product) => {
+        {products.map((product,index) => {
           return (
-            <div className="product">
+            <div className="product" key={index}>
               <div className="product-preview">
                 <img
-                  src="https://via.placeholder.com/250/250"
+                  src="https://placehold.co/250x250"
                   alt="some product"
                   width="250"
                   height="250"
